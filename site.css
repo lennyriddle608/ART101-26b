@@ -1,5 +1,74 @@
 body {background: #ffeded;padding: 50px;}
 img {width: 200px;}
-h1 {color:rgb(214, 51, 100)}
+h1 {color:rgb(214, 51, 100);
+margin: 0 0 0 0;
+}
 h2 {color:rgb(139, 17, 74)}
 p {color:rgb(163, 26, 78)}
+#page {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto 0 auto;
+    background: rgb(255, 215, 215);
+    padding: 30px;
+    border-radius: 5px;
+}
+.text-box {
+  border: 2px solid rgb(139, 17, 74);
+  background-color: rgb(255, 234, 231);
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+.top-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    position: center;
+    
+}
+#introduction {
+    background: #f3f7ff;
+    padding: 0px;
+    border-left: 6px solid #1d1184;
+    flex: 2;
+    
+}
+#introduction h2 {
+    font-style: italic;
+    margin-top: 0;
+    
+}
+#introduction p {
+    font-size: 120%;
+    line-height: 1.5;
+}
+.profile {
+    text-align: center;
+    flex: 1;
+}
+.profile img {
+    width: 220px;
+    border-radius: 12px;
+}
+.profile p {
+    font-size: 90%;
+}
+.navigation {
+    background: rgb(255, 234, 231);
+    width: 400px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(139, 17, 74);
+    position:absolute;bottom: 0;
+    margin: 0 0 105px 70px;
+.navigation h2 {
+    margin-top: 0;
+}
+.navigation li {
+    margin-bottom: 10px;
+}
+.navigation a {
+    color: #2e0646;
+    font-weight: bold;
+}
