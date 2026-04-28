@@ -28,3 +28,6 @@ h2 {color:antiquewhite}
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+.bottom-section {
+    position:absolute; bottom: 0;
+}
