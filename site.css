@@ -50,18 +50,19 @@ p {color:rgb(163, 26, 78)}
 .profile img {
     width: 220px;
     border-radius: 12px;
+    position: fixed 0;
 }
 .profile p {
     font-size: 90%;
 }
 .navigation {
     background: rgb(255, 234, 231);
-    width: 400px;
+    width: 900px;
     padding: 30px;
     border-radius: 5px;
     border: 2px solid rgb(139, 17, 74);
-    position:absolute;bottom: 0;
-    margin: 0 0 180px 70px;
+    margin: 90px 90px -230px -530px;
+}
 .navigation h2 {
     margin-top: 0;
 }
