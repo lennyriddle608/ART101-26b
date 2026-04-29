@@ -1,34 +1,41 @@
-body {background-image: url("images/ivantill-meteorshower.png");
+body {
+    background-image: url("images/ivantill-meteorshower.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 h2 {color:antiquewhite}
-#ivantillbabies {width: 400px;
+#ivantillbabies {
+    width: 400px;
     border: 1.7px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
-#leaving {width: 300px;
+#leaving {
+    width: 300px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
 #happy {width: 300px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
+    position: absolute;
 }
-#lettinggo {width: 300px;
+#lettinggo {
+    width: 300px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
+    position: absolute; right: -875px;
 }
 #erm {
     width: 500px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-#iknewit {width: 300px;
+#iknewit {
+    width: 300px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
@@ -37,7 +44,7 @@ h2 {color:antiquewhite}
 }
 .top-section h2 {
     border: 2px solid rgb(46, 2, 2);
-    background-color: rgb(53, 34, 32);
+    background-color: rgb(31, 10, 9);
     padding: 20px;
     width: 302px;
     border-radius: 5px;
