@@ -4,7 +4,10 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-h2 {color:antiquewhite}
+h2 {
+    color:antiquewhite;
+    text-align: center;
+}
 #ivantillbabies {
     width: 400px;
     border: 1.7px solid rgb(0, 0, 0);
@@ -41,13 +44,6 @@ h2 {color:antiquewhite}
 }
 .top-section {
     position: absolute; top: 0;
-}
-.top-section h2 {
-    border: 2px solid rgb(46, 2, 2);
-    background-color: rgb(31, 10, 9);
-    padding: 20px;
-    width: 302px;
-    border-radius: 5px;
 }
 .main-section {
     display: flex;
