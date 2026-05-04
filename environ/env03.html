@@ -9,7 +9,7 @@
     <script>
 function pictureChange()
 {
-document.getElementById("theImage").src="images/iknewit.jpg";
+document.getElementById("erm").src="images/ermactually.jpg";
 }
 </script>
 </head>
@@ -18,25 +18,16 @@ document.getElementById("theImage").src="images/iknewit.jpg";
         <h2>To me, you are Black Sorrow.</h2>
 
     <div class="main-section">
-        <img id="erm" src="images/ermactually.jpg" onclick="pictureChange()"/>
+        <img id="erm" src="images/ermactually.jpg"/>
     </div>
     
     <div class="bottom-section">
-        <button type="submit" id="button">
-            <img id="happy" src="images/tillhappy.jpg" onclick="pictureChange()"/>
-        </button>
-        <button type="submit" id="button">
-            <img id="lettinggo" src="images/lettinggo.jpg" onclick="pictureChange()"/>
-        </button>
-        <button type="submit" id="button">
-            <img id="ermsmaller" src="images/ermactuallysmaller.jpg" onclick="pictureChange()"/>
-        </button>
-        <button type="submit" id="button">
-            <img id="leaving" src="images/tillleaving.jpg" onclick="pictureChange()"/>
-        </button>
-        <button type="submit" id="button">
-            <img id="iknewit" src="images/iknewit.jpg" onclick="pictureChange()"/>
-        </button>
+  
+        <button id="happy" onclick="changeImage()">Joy</button>
+        <button id="lettinggo" onclick="changeImage()">Letting Go</button>
+        <button id="ermsmaller" onclick="changeImage()">Hesitation</button>
+        <button id="leaving" onclick="changeImage()">Leave</button>
+        <button id="iknewit" onclick="changeImage()">Expected</button>
 
     </div>
 
