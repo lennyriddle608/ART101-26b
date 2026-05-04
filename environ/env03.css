@@ -1,0 +1,68 @@
+body {
+    background-image: url("images/ivantill-meteorshower.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h2 {
+    color:antiquewhite;
+    text-align: center;
+}
+#ivantillbabies {
+    width: 400px;
+    border: 1.7px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+#leaving {
+    width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+}
+#happy {width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+}
+#lettinggo {
+    width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+    margin: 15px;
+}
+#erm {
+    width: 500px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+#ermsmaller {
+    width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+}
+#iknewit {
+    width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+}
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button {
+    background-color: transparent;
+    border: none;
+}
