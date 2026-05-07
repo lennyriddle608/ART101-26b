@@ -1,84 +1,100 @@
-
-<script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    src="env03.js">
-    <link rel="stylesheet" href="env03.css"/>
-</script>
-
-let environmentTitle = "IVTI";
-
-let environmentElements = [happy, lettinggo, ermsmaller, leaving, iknewit];
-
-IVTI [0];
-IVTI [1];
-IVTI [2];
-IVTI [3];
-IVTI [4];
-
-let joycount=0;
-let lettinggocount=0;
-let ermcount=0;
-let leavingcount=0;
-let iknewitcount=0;
-
-function showIVTIImage(IVTIName){
-$("img").hide();
-$("body").append("<img class='img' src='" + IVTIName + ".jpg'>");
+moods = ["tillhappy", "lettinggo", "ermactually", "tillleaving", "iknewit"]// track counts
+let hangoutCount = {
+    tillhappy: 0,
+    lettinggo: 0,
+    ermactually: 0,
+    tillleaving: 0,
+    iknewit: 0
 };
 
-$("img").hide();
+// show image
+function showMoodsImage(moodsName) {
+    // hide all images first
+    $("main-section").hide();
+    // show only the selected one
+    $("body").append("<img class='main-section' src='" + moodsName + ".jpg'>");
+}
 
-function IVTIClick(IVTIName) {
-    // increase count
-    IVTICount[IVTIName]++;
+// hide all images
+$("main-section").hide();
 
-    console.log(IVTIName + " clicked");
-    console.log("Hangouts with " + IVTIName + ": " + hangoutCount[IVTIName])
-};
-
-$("#happy").click(function(){
-    joycount= joycount +1;
-console.log("happy clicker");
-showIVTIImage("tillhappy");
-$("#happy").html();
-IVTIClick("Joy");
+// mood clicks
+$("#tillhappy").click(function () {
+    console.log("tillhappy clicked");
+    showMoodsImage("tillhappy");
+    moodsClick("tillhappy");
 });
 
-$("#lettinggo").click(function(){
-    lettinggocount = lettinggocount +1;
-console.log("letting go clicker");
-showIVTIImage("lettinggo");
-$("#lettinggo").html();
-IVTIClick("Letting Go");
+$("#lettinggo").click(function () {
+    console.log("lettinggo clicked");
+    showMoodsImage("lettinggo");
+    moodsClick("lettinggo");
 });
 
-$("#erm").click(function(){
-    ermcount = ermcount +1;
-console.log("erm clicker");
-showIVTIImage("ermactually");
-$("#erm").html();
-IVTIClick("Hesitation");
+$("#ermactually").click(function () {
+    console.log("ermactually clicked");
+    showMoodsImage("ermactually");
+    moodsClick("ermactually");
 });
 
-$("#leaving").click(function(){
-console.log("leaving clicker");
-showIVTIImage("tillleaving");
-$("#leaving").html();
-IVTIClick("Leave");
+$("#tillleaving").click(function () {
+    console.log("tillleaving clicked");
+    showMoodsImage("tillleaving");
+    moodsClick("tillleaving");
 });
 
-$("#iknewit").click(function(){
-console.log("expected clicker");
-showIVTIImage("iknewit");
-$("#iknewit").html();
-IVTIClick("Expected");
+$("#iknewit").click(function () {
+    console.log("iknewit clicked");
+    showMoodsImage("iknewit");
+    moodsClick("iknewit");
 });
 
-function IVTIClick(IVTIName) {
+// ivan = ["ivantillbabies", "oneshot", "twoshot", "threeshot", "broimdead", "dead"]// track counts
+// let shotsCount = {
+// ivantillbabies: 0,
+// oneshot: 0,
+// twoshot: 0,
+// threeshot: 0
+// broimdead: 0,
+// dead: 0
+// };
+//      function ivanClick(ivanName) {
+//     // increase count
+//     shotsCount[ivanName]++;
 
-    console.log(IVTIName + " clicked");
+//     console.log(ivanName + " clicked");
+//     console.log("Shots with " + ivanName + ": " + shotsCount[ivanName]);
 
-    // show image
-    showFriendImage(IVTIName);
+//     // check if hit 5 hangouts
+//     if (clickCount[ivanName] === 5) {
+//     function showMoodsImage(moodsName)
+//     let otherFriends = ivan.filter(i => i !== ivanName);
 
-};
+//     let suggestion = otherFriends[0];
+//     let minCount = shotsCount[suggestion];
+
+//     for (let i = 1; i < otherIvan.length; i++) {
+//         let i = otherIvan[i];
+//         if (hangoutCount[i] < minCount) {
+//             minCount = hangoutCount[i];
+//             suggestion = i;
+//         }
+//     }
+
+//     $("#suggestion-box").html(
+//         "<p>You've hung out with " + friendName + " 5 times. Try hanging out with <b>" 
+//         + suggestion + "</b> (" + minCount + " hangouts).</p>"
+//     );
+// }
+
+//     // show image
+//     showivanImage(ivanName);
+
+//     // update count on page
+//     $("#count-" + ivanName).remove();
+
+//     $("#" + ivanName).append(
+//         "<p id='count-" + ivanName + "'>Shots: " + shotsCount[ivanName] + "</p>"
+//     );
+// }
+
