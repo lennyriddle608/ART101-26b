@@ -1,35 +1,37 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+
+<!-- All techy stuff goes here, inside HEAD -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="env03.css" rel="stylesheet" type="text/css" />
+
+<!-- Overall title of your page -->
     <title>To me, you are Black Sorrow.</title>
-    <link href="env03.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="env03.js" defer></script>
-    <script>
-function pictureChange()
-{
-document.getElementById("erm").src="images/ermactually.jpg";
-}
-</script>
+
 </head>
 <body>
     
         <h2>To me, you are Black Sorrow.</h2>
 
     <div class="main-section">
-        <img id="erm" src="images/ermactually.jpg"/>
-    </div>
-    
-    <div class="bottom-section">
   
-        <button id="happy" onclick="changeImage()">Joy</button>
-        <button id="lettinggo" onclick="changeImage()">Letting Go</button>
-        <button id="ermsmaller" onclick="changeImage()">Hesitation</button>
-        <button id="leaving" onclick="changeImage()">Leave</button>
-        <button id="iknewit" onclick="changeImage()">Expected</button>
+        <button id="happy">Joy</button>
+        <button id="lettinggo">Letting Go</button>
+        <button id="ermsmaller">Hesitation</button>
+        <button id="leaving">Leave</button>
+        <button id="iknewit">Expected</button>
 
     </div>
+
+    <div id="environment-output"></div>
 
 </body>
 </html>
