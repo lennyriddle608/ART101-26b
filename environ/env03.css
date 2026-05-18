@@ -21,14 +21,6 @@ body {
     position: center;
 }
 
-#suggestion-box {
-    display: inline-block;
-    background-color: pink;
-    margin-top: 20px;
-    font-size: 18px;
-    color: red;
-}
-
 button {
     background-color: rgb(39, 2, 2);
     color: antiquewhite;
@@ -41,4 +33,12 @@ button {
     width: 400px;
     border: 1.7px solid rgb(0, 0, 0);
     border-radius: 10px;
+}
+
+#suggestion-box {
+    display: inline-block;
+    background-color: pink;
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
 }

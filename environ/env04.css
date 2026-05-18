@@ -1,0 +1,94 @@
+body { 
+    background-color: rgb(233, 233, 137); padding: 20px;
+    background-image: url("images/ivantill-meteorshower.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head {
+    color:antiquewhite;
+    text-align: center;
+}
+
+.ivantill {
+    width: 400px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    top: 250px;
+    left:10%;
+    position:absolute;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(39, 2, 2);
+    color: antiquewhite;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#ivantillbabies {
+    width: 400px;
+    border: 1.7px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#suggestion-box {
+    display: inline-block;
+    background-color: pink;
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+#good-button {
+    background-color: rgb(73, 19, 9);
+    width: 400px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#good-button-container {
+    background-color: rgb(92, 36, 26);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin:auto;
+    border: 5px solid rgb(73, 15, 6);
+    border-radius: 10px;
+    padding: auto;
+    text-align:center;
+    anchor-name: center;
+}
+
+#ivantill {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#ivantill-img {
+    width: 400px;
+}
+
+#output {
+    width: 400px;
+    border-radius: 10px;
+    padding: 0 0 0 67%;
+    margin-top: -250px;
+}
+
+ol {
+    font-size: 18px;
+    color: antiquewhite;
+    position:fixed;
+    margin: 100px;
+    background-color: rgb(73, 19, 9);
+    border: 5px solid rgb(54, 10, 4);
+    border-radius: 5px;
+    width: 100px;
+}
