@@ -94,17 +94,20 @@ ol {
 }
 
 #creature {
-    background-image: url("images/ivanchibi.png");
-  width: 120px;
-  height: 120px;
-  background: pink;
-  border-radius: 30px;
-  padding: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: absolute;
-  transition: background 0.3s, border-radius 0.3s, transform 0.3s, box-shadow 0.3s;
-  z-index: 2;
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    transition: background 0.3s, border-radius 0.3s, transform 0.3s, box-shadow 0.3s;
+    z-index: 2;
+}
+
+#Ivan {
+    width: 120px;
+    height: 120px;
 }
 
 #thought {

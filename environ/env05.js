@@ -69,6 +69,30 @@ function askNumber(whatNumber) {
             break;
 }
 
+    // if (userNumber == 'One') {
+    //     $("#output").html("<img src='oneshot.png' alt='One!'>");
+    // }
+    // if (userNumber == 'Two') {
+    //     $("#output").html("<img src='twoshot.png' alt='Two!'>");
+    // }
+    // if (userNumber == 'Three') {
+    //     $("#output").html("<img src='threeshot.png' alt='Three!'>");
+    // }
+    // if (userNumber == '???') {
+    //     $("#output").html("<img src='broimdead.png' alt='Bro I'm Dead!'>");
+    // }
+    // if (userNumber == '...') {
+    //     $("#output").html("<img src='dead.png' alt='Dead!'>");
+    // }
+    // else {
+    //     $("#output").html("<img src='dead.png' alt='Dead!'>");
+    // }
+}
+
+$("#good-button").click(function () {
+    askNumber("One", "Two", "Three", "???", "...");
+});
+
 let following = false;
 
 $("#creature").click(function () {
@@ -110,32 +134,6 @@ $(document).mousemove(function (event) {
     });
   }
 });
-
-
-    // if (userNumber == 'One') {
-    //     $("#output").html("<img src='oneshot.png' alt='One!'>");
-    // }
-    // if (userNumber == 'Two') {
-    //     $("#output").html("<img src='twoshot.png' alt='Two!'>");
-    // }
-    // if (userNumber == 'Three') {
-    //     $("#output").html("<img src='threeshot.png' alt='Three!'>");
-    // }
-    // if (userNumber == '???') {
-    //     $("#output").html("<img src='broimdead.png' alt='Bro I'm Dead!'>");
-    // }
-    // if (userNumber == '...') {
-    //     $("#output").html("<img src='dead.png' alt='Dead!'>");
-    // }
-    // else {
-    //     $("#output").html("<img src='dead.png' alt='Dead!'>");
-    // }
-}
-
-$("#good-button").click(function () {
-    askNumber("One", "Two", "Three", "???", "...");
-});
-
 
 // ivan = ["ivantillbabies", "oneshot", "twoshot", "threeshot", "broimdead", "dead"]// track counts
 // let shotsCount = {
