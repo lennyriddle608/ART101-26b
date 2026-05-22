@@ -97,13 +97,13 @@ let following = false;
 
 $("#creature").click(function () {
   $(this).toggleClass("transformed");
-  $("#status").text("The creature changed shape.");
+  $("#status").text("He changed shape.");
 });
 
 $("#creature").hover(
   function () {
     $("#thought").stop(true, true).slideDown(300);
-    $("#status").text("The creature revealed a thought.");
+    $("#status").text("He formed a thought.");
   },
   function () {
     $("#thought").stop(true, true).slideUp(300);
@@ -119,9 +119,9 @@ $(document).keydown(function (event) {
     $("#creature").toggleClass("following");
 
     if (following === true) {
-      $("#status").text("The creature is following your cursor.");
+      $("#status").text("You caught him!");
     } else {
-      $("#status").text("The creature stopped following you.");
+      $("#status").text("You let him go.");
     }
   }
 });
