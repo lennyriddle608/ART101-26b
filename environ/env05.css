@@ -152,3 +152,12 @@ ol {
     justify-content: center;
     margin-top: 20px;
 }
+
+#till {
+    position: absolute;
+    width: 193px;
+    top: 518px;
+    right: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}

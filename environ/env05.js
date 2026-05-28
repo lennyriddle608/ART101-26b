@@ -136,6 +136,59 @@ $(document).mousemove(function (event) {
   }
 });
 
+// Source - https://stackoverflow.com/a/50434320
+// Posted by Saeed, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-05-28, License - CC BY-SA 4.0
+
+var imgs = [
+  "Till_Red_Meteor.webp",
+  "Ivan-till-choke.webp",
+];
+var showImageName = 1;
+
+function changeIMG(dir) {
+  var img = document.getElementById("till");
+  img.src = imgs[dir];
+  img.alt = dir;
+}
+
+var keyPressed = false;   
+
+function f(e, str) {
+  switch (str) {
+    case "up":
+      if (e.keyCode == 32) {
+        changeIMG(1);
+      } else if (e.keyCode == 32) {
+        changeIMG(1);
+      }
+      break;
+    case "down":
+      if (e.keyCode == 32) {
+        changeIMG(1);
+      } else if (e.keyCode == 32)  {
+        changeIMG(1);
+      }
+      break;
+  }
+}
+
+$(document)
+  .keydown(function(e) {
+    if (!keyPressed) {
+      keyPressed = true;
+      f(e, "down");
+    }
+  })
+  .keyup(function(e) {
+    if (keyPressed) {
+      keyPressed = false;
+      f(e, "up");
+    }
+  });
+
+changeIMG(0); 
+
 // ivan = ["ivantillbabies", "oneshot", "twoshot", "threeshot", "broimdead", "dead"]// track counts
 // let shotsCount = {
 // ivantillbabies: 0,
