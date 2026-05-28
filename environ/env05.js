@@ -129,8 +129,9 @@ $(document).keydown(function (event) {
 $(document).mousemove(function (event) {
   if (following === true) {
     $("#creature").css({
-      left: event.pageX - $("#scene").offset().left + 0,
-      top: event.pageY - $("#scene").offset().top + 0
+      transform: "translate(" + (event.pageX - $("#scene").offset().left) + "px, " + (event.pageY - $("#scene").offset().top) + "px)"
+      // left: event.pageX - $("#scene").offset().left,
+      // top: event.pageY - $("#scene").offset().top,
     });
   }
 });
